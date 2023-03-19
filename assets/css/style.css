@@ -43,12 +43,18 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+a{ text-decoration: none; }
 
-/* INICIO PERSOLNALIZADO */
+/* *************
+* GERAL 
+****************/
 
 body{
     font-family: 'Inter', sans-serif;
     color: #1f1f1f;
+}
+main{
+    min-height: 600px;
 }
 a{
     color: #1f1f1f;
@@ -58,9 +64,33 @@ a{
     max-width: 1200px;
     margin: 0 auto;
 }
+.laranja{
+    background-color: #ED6D2C;
+    color: #FFF;
+}
+.botao{
+    width: 100%;
+    border-radius: 30px;
+    border: none;
+    font-size: 16px;
+    margin: 1em;
+    line-height: 35px;
+    cursor: pointer;
+}
+nav ul li{
+    padding: 8px 10px;
+    border-radius: 10px;
+}
+.ativo{
+    background-color: #F2F2F2;
+}
 
+/* *************
+* HEADER 
+****************/
 header{
     border-bottom: 2px solid #E6E6E6;
+    
 }
 
 header div.header{
@@ -71,12 +101,13 @@ header div.header{
     padding: 1em 0.5em;
 }
 
+/* *************
+* FOOTER 
+****************/
 
-main{
-    min-height: 600px;
-}
-
-/* FOOTER */
+/* *************
+* FOOTER 
+****************/
 footer{
     background-color: #CCCCCC;
     padding: 1em 0;
