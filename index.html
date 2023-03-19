@@ -26,7 +26,9 @@
     </header>
 
     <main class="container">
-        <nav style="max-width: 20%; min-width: 200px;">
+        
+        <!-- MENU ESQUERDO -->
+        <nav style="width: 25%;">
             <div>
                 <button class="botao laranja">Entrar</button>
             </div>
@@ -42,6 +44,16 @@
             </div>
             <hr class="menu-divisor">
             <div>
+                <h4><img src="assets/img/icons/graduation.svg" alt="timer-icon">Meus Cursos</h4>
+                <ul>
+                    <a href="#"><li>Nome de um Curso</li></a>
+                    <a href="#"><li>Nome de outro Curso</li></a>
+                    <a href="#"><li class="ativo2">O Curso Visto Agora</li></a>
+                    <a href="#"><li>Por fim mais um Curso</li></a>
+                </ul>
+            </div>
+            <hr class="menu-divisor">
+            <div>
                 <h4><img src="assets/img/icons/timer.svg" alt="timer-icon">Intervalo</h4>
                 <ul>
                     <a href="#"><li>Todo o período</li></a>
@@ -50,8 +62,51 @@
                     <a href="#"><li>Personalizado</li></a>
                 </ul>
             </div>
-            
+            <hr class="menu-divisor">
+            <div>
+                <h4><img src="assets/img/icons/filter.svg" alt="timer-icon">Filtros dos Cursos</h4>
+                <h5>&nbsp;<img src="assets/img/icons/users.svg" alt="timer-icon">&nbsp;Inscritos</h5>
+                <ul class="lista-com-toggle">
+                    <li>
+                        <p>Até 500 Alunos</p>
+                        <label class="toggle">
+                            <input class="toggle-checkbox" type="checkbox">
+                            <div class="toggle-switch"></div>
+                        </label>
+                    </li>
+                    <li>
+                        <p>Entre 500 e 2,5 mil</p>
+                        <label class="toggle">
+                            <input class="toggle-checkbox" type="checkbox">
+                            <div class="toggle-switch"></div>
+                        </label>
+                    </li>
+                    <li>
+                        <p>Entre 2,5 mil e 5 mil</p>
+                        <label class="toggle">
+                            <input class="toggle-checkbox" type="checkbox">
+                            <div class="toggle-switch"></div>
+                        </label>
+                    </li>
+                    <li>
+                        <p>Mais de 5 mil</p>
+                        <label class="toggle">
+                            <input class="toggle-checkbox" type="checkbox">
+                            <div class="toggle-switch"></div>
+                        </label>
+                    </li>
+                </ul>
+            </div>
+            <hr class="menu-divisor">
         </nav>
+        <!-- FIM MENU ESQUERDO -->
+        <!-- CONTEÚDO PRINCIPAL -->
+        <div class="conteudo">
+            <h1>Dados da Plataforma</h1>
+            <h2 class="titulo-conteudo">Visão Geral</h2>
+
+        </div>
+        <!-- FIM CONTEÚDO PRINCIPAL -->
     </main>
 
     <footer>

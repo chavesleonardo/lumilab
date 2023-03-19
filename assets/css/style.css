@@ -55,6 +55,9 @@ body{
 }
 main{
     min-height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2%;
 }
 a{
     color: #1f1f1f;
@@ -73,7 +76,7 @@ a{
     border-radius: 30px;
     border: none;
     font-size: 16px;
-    margin: 1em;
+    margin: 10px 0;
     line-height: 35px;
     cursor: pointer;
 }
@@ -87,6 +90,11 @@ nav h4{
     align-items: center;
     gap: 5px;
     margin-bottom: 5px;
+}
+nav h5{
+    font-weight: 600;
+    margin: 15px 0;
+    font-size: 14px;
 }
 nav ul li{
     padding: 10px;
@@ -103,6 +111,12 @@ li.ativo::before, li.ativo2::before {
     color: #000;
     border-radius: 20px;
 }
+.lista-com-toggle li{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
 
 .ativo{
     background-color: #F2F2F2;
@@ -112,12 +126,79 @@ li.ativo::before, li.ativo2::before {
     color: #FFF;
 }
 
+/* BOTAO LIGADO*/
+.toggle {
+    cursor: pointer;
+    display: inline-block;
+}
+
+.toggle-switch {
+    display: inline-block;
+    background: #ccc;
+    border-radius: 16px;
+    width: 40px;
+    height: 24px;
+    position: relative;
+    vertical-align: middle;
+    transition: background 0.25s;
+}
+.toggle-switch:before, .toggle-switch:after {
+    content: "";
+}
+.toggle-switch:before {
+    display: block;
+    background: linear-gradient(to bottom, #fff 0%, #eee 100%);
+    border-radius: 50%;    
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    transition: left 0.25s;
+}
+.toggle:hover .toggle-switch:before {
+    background: linear-gradient(to bottom, #fff 0%, #fff 100%);
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.5);
+}
+.toggle-checkbox:checked + .toggle-switch {
+    background: #56c080;
+}
+.toggle-checkbox:checked + .toggle-switch:before {
+    left: 20px;
+}
+
+.toggle-checkbox {
+    position: absolute;
+    visibility: hidden;
+}
+  
+
+/* *************
+* CONTEUDO
+****************/
+.conteudo{
+    width: 72%;
+}
+.conteudo h1{
+    font-weight: 600;
+    font-size: 20px;
+    margin: 10px 0;
+}
+.titulo-conteudo{
+    border: solid 1px #CCC;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    margin: 10px 0;
+    border-radius: 30px;
+    font-weight: 600;
+}
+
 /* *************
 * HEADER 
 ****************/
 header{
     border-bottom: 2px solid #E6E6E6;
-    
 }
 
 header div.header{
@@ -127,10 +208,6 @@ header div.header{
     align-items: center;
     padding: 1em 0.5em;
 }
-
-/* *************
-* FOOTER 
-****************/
 
 /* *************
 * FOOTER 
