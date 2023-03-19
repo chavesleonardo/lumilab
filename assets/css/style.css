@@ -77,15 +77,28 @@ a{
     line-height: 35px;
     cursor: pointer;
 }
-
+.menu-divisor{
+    height: 10px;
+    border: none;
+}
+nav h4{
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 5px;
+}
 nav ul li{
     padding: 10px;
     border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }
 
 li.ativo::before, li.ativo2::before {
     content: "\00a0 ";
-    margin: 0 10px 0 -9px;
+    margin: 0 0 0 -9px;
     background-color: #000;
     color: #000;
     border-radius: 20px;
