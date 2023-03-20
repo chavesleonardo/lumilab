@@ -52,6 +52,7 @@ a{ text-decoration: none; }
 body{
     font-family: 'Inter', sans-serif;
     color: #1f1f1f;
+    font-size: 14px;
 }
 main{
     min-height: 600px;
@@ -136,8 +137,8 @@ li.ativo::before, li.ativo2::before {
     display: inline-block;
     background: #ccc;
     border-radius: 16px;
-    width: 40px;
-    height: 24px;
+    width: 35px;
+    height: 20px;
     position: relative;
     vertical-align: middle;
     transition: background 0.25s;
@@ -149,11 +150,11 @@ li.ativo::before, li.ativo2::before {
     display: block;
     background: linear-gradient(to bottom, #fff 0%, #eee 100%);
     border-radius: 50%;    
-    width: 16px;
-    height: 16px;
+    width: 12px;
+    height: 12px;
     position: absolute;
     top: 4px;
-    left: 4px;
+    left: 5px;
     transition: left 0.25s;
 }
 .toggle:hover .toggle-switch:before {
@@ -164,20 +165,32 @@ li.ativo::before, li.ativo2::before {
     background: #51C94E;
 }
 .toggle-checkbox:checked + .toggle-switch:before {
-    left: 20px;
+    left: 18px;
 }
 
 .toggle-checkbox {
     position: absolute;
     visibility: hidden;
 }
+
+/* Acordion */
+.accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
   
+  .active:after {
+    content: "\2212";
+  }
 
 /* *************
 * CONTEUDO
 ****************/
 .conteudo{
-    width: 72%;
+    width: 78%;
 }
 .conteudo h1{
     font-weight: 600;
@@ -186,7 +199,6 @@ li.ativo::before, li.ativo2::before {
 }
 .titulo-conteudo{
     border: solid 1px #CCC;
-    width: 100%;
     padding: 10px;
     text-align: center;
     margin: 10px 0;
