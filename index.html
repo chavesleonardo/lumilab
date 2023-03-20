@@ -58,8 +58,16 @@
                 <ul>
                     <a href="#"><li>Todo o período</li></a>
                     <a href="#"><li>Primeiro mês</li></a>
-                    <a href="#"><li class="ativo2">Última Semana</li></a>
-                    <a href="#"><li>Personalizado</li></a>
+                    <a href="#"><li>Última Semana</li></a>
+                    <a href="#" id="intervalo-personalizado"><li class="ativo2">Personalizado</li></a>
+                    <li id="slide-out" class="datas-visivel">
+                        <div class="datas-periodo">
+                            <label for="periodo_inicial">Período Inicial:</label>   
+                            <input type="date" name="periodo_inicial" value=""/>
+                            <label for="periodo_inicial">Período Final:</label>   
+                            <input type="date" name="periodo_inicial" value=""/>
+                        </div>
+                    </li>
                 </ul>
             </div>
             <hr class="menu-divisor">
@@ -140,6 +148,6 @@
             </div>
         </div>
     </footer>
-
+    <script src="assets/js/script.js"></script>
 </body>
 </html>

@@ -127,6 +127,33 @@ li.ativo::before, li.ativo2::before {
     color: #FFF;
 }
 
+/* DATAS FILTRO */
+.datas-periodo{
+    display: flex;
+    flex-flow: column;
+    gap: 10px;
+    width: 100%;
+}
+.datas-periodo label{
+    font-size: 12px;
+    font-weight: 600;
+    color: #51C94E;
+}
+.datas-periodo input[type="date"]{
+    padding: 5px;
+    text-align: center;
+    border-radius: 10px;
+    border: #BBD6E9 solid 1px;
+    font-size: 15px;
+    color: #7e7e7e;
+}
+.datas-visivel { 
+    display: block;
+}   
+.datas-ocultas { 
+    display: none;
+}
+
 /* BOTAO LIGADO*/
 .toggle {
     cursor: pointer;
