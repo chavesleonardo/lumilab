@@ -265,6 +265,40 @@ li.ativo::before, li.ativo2::before {
     font-weight: 600;
 }
 
+/* BOTOES LARANJA TOPO CONTEUDO*/
+.caixa-conteudo{
+    border-radius: 15px;
+    border: 1px solid #CCC;
+    padding: 20px;
+}
+.botao-laranja-topo {
+    background: #FFF;
+    color: #000;
+    line-height: 34px;
+    display: inline-block;
+    width: 316px;
+    border: 1px solid #ED6D2C;
+    border-radius: 25px;
+    position: relative;
+    cursor: pointer;
+    text-align: center;
+}
+.blt-ativo{
+    background: #ED6D2C;
+    color: #FFF;
+    z-index: 3;
+}
+.blt-ml-35px{
+    margin-left: -35px;
+}
+.zindex2{
+    z-index: 2;
+}
+.botao-laranja-topo:hover:not(.blt-ativo){
+    font-weight: bold;
+    z-index: 4;
+}
+
 /* *************
 * HEADER 
 ****************/
