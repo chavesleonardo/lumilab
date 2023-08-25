@@ -1,31 +1,4 @@
-<!DOCTYPE html>
-<html lang="pt-BR" class="h-100">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/bootstrap-5.2.3/css/bootstrap.min.css" >
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" href="https://upload.wikimedia.org/wikipedia/commons/e/ee/Logo_brand_Adidas.png" />
-    <title>LumiLab</title>
-</head>
-
-<body class="d-flex flex-column h-100" cz-shortcut-listen="true">
-
-<!-- HEADER -->
-<div class="container">
-  <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
-          <img src="assets/img/logos/logo.svg" alt="Logo LumiLab">
-        </a>
-        <ul class="nav">
-          <li class="nav-item"><a href="#" class="nav-link"><img src="assets/img/logos/logo_lumina.svg" alt="Logo LumiLab"></a></li>
-        </ul>
-  </header>
-</div>
+<?php include 'header.php'; ?>
 
 <!-- CONTEUDO -->
 <main class="flex-shrink-0">
@@ -42,6 +15,7 @@
           </div>
           <!-- FIM VAI NO LUGAR DO FORM QUANDO LOGADO -->
 
+          <!-- MENU LINKS PADRAO -->
           <ul class="nav nav-pills flex-column mb-auto">
             <li class="nav-item"> <a href="#" class="nav-link active2"><i class="icone icone-dados-plataforma"></i> Dados da Plataforma </a> </li>
             <li> <a href="#" class="nav-link texto-com-icone"><i class="icone icone-ajuda"></i> Ajuda</a> </li>
@@ -50,14 +24,17 @@
             <li> <a href="#" class="nav-link texto-com-icone"><i class="icone icone-politica"></i> Política de Privacidade</a> </li>
           </ul>
           <br>
+          <!-- FIM MENU LINKS PADRAO -->
 
+          <!-- MENU INTERVALO -->
           <p class="titulo texto-com-icone"><i class="icone icone-intervalo"></i> <strong>Intervalo</strong></p>
           <ul class="nav nav-pills flex-column mb-auto">
-            <li> <a href="#" class="nav-link active">Todo o Período</a> </li>
+            <li> <a href="#" class="nav-link ">Todo o Período</a> </li>
             <li> <a href="#" class="nav-link">Primeiro Mês</a> </li>
-            <li> <a href="#" class="nav-link">Última Semana</a> </li>
+            <li> <a href="#" class="nav-link active">Última Semana</a> </li>
             <li> <a href="#" class="nav-link">Personalizado</a> </li>
           </ul>
+          <!-- FIM MENU INTERVALO -->
         </div>
       </div>
 
@@ -200,44 +177,4 @@
 </main>
 <!-- FIM CONTEUDO -->
 
-<!-- FOOTER -->
-<footer class="footer mt-auto py-3">
-  <div class="container">
-    <div class="row d-flex justify-content-between align-items-center">
-        <div class="col-3">
-            <ul>
-                <li><a href="#">Equipe</a></li>
-                <li><a href="#">Termos de Uso</a></li>
-                <li><a href="#">Declaração de Privacidade</a></li>
-                <li><a href="#">Ajuda | FAQ</a></li>
-            </ul>
-        </div>
-        <div class="col-3">
-            <ul>
-                <li><a target="_blank" href="https://www.instagram.com/seadufrgs">@seadufrgs</a></li>
-                <li><a target="_blank" href="https://www.instagram.com/napeadufrgs">@napeadufrgs</a></li>
-                <li><a href="mailto:lumina@sead.ufrgs.br">lumina@sead.ufrgs.br</a></li>
-            </ul>
-        </div>
-        <div id="footer-logos" class="col-6 d-flex justify-content-end align-items-center">
-            <a href="#">
-                <img src="assets/img/logos/logo_ufrgs.svg" alt="Logo UFRGS">
-            </a>
-            <a href="#">
-                <img src="assets/img/logos/logo_sead.svg" alt="Logo SEAD">
-            </a>
-            <a href="#">
-                <img src="assets/img/logos/logo_napead.svg" alt="Logo NAPEAD">
-            </a>
-            <a href="#">
-                <img src="assets/img/logos/logo_cnpq.svg" alt="Logo CNPQ">
-            </a>
-        </div>
-    </div>
-  </div>
-</footer>
-<script src="assets/bootstrap-5.2.3/js/bootstrap.bundle.min.js"></script>
-<script type="text/javascript" src="//fastly.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
-<script src="assets/js/script.js"></script>
-</body>
-</html>
+<?php include 'footer.php'; ?>

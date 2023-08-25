@@ -1,31 +1,4 @@
-<!DOCTYPE html>
-<html lang="pt-BR" class="h-100">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/bootstrap-5.2.3/css/bootstrap.min.css" >
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" href="https://upload.wikimedia.org/wikipedia/commons/e/ee/Logo_brand_Adidas.png" />
-    <title>LumiLab</title>
-</head>
-
-<body class="d-flex flex-column h-100" cz-shortcut-listen="true">
-
-<!-- HEADER -->
-<div class="container">
-  <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
-          <img src="assets/img/logos/logo.svg" alt="Logo LumiLab">
-        </a>
-        <ul class="nav">
-          <li class="nav-item"><a href="#" class="nav-link"><img src="assets/img/logos/logo_lumina.svg" alt="Logo LumiLab"></a></li>
-        </ul>
-  </header>
-</div>
+<?php include 'header.php'; ?>
 
 <!-- CONTEUDO -->
 <main class="flex-shrink-0">
@@ -37,7 +10,7 @@
           <p class="text-center">É professor do Lúmina?</p>
 
           <!-- LOGIN -->
-          <form id="form-login-esquerdo" method="get" action="logado.html">
+          <form id="form-login-esquerdo" method="get" action="logado.php">
             <input type="email" placeholder="E-mail" class="">
             <input type="password" placeholder="Senha" class="">
 
@@ -50,6 +23,7 @@
           <p id="esqueci-senha" class="w-100 text-center"><a href="#">Esqueci a senha</a></p>
           <!-- LOGIN -->
 
+          <!-- MENU LINKS PADRAO -->
           <ul class="nav nav-pills flex-column mb-auto">
             <li class="nav-item"> <a href="#" class="nav-link active2"><i class="icone icone-dados-plataforma"></i> Dados da Plataforma </a> </li>
             <li> <a href="#" class="nav-link texto-com-icone"><i class="icone icone-ajuda"></i> Ajuda</a> </li>
@@ -58,7 +32,9 @@
             <li> <a href="#" class="nav-link texto-com-icone"><i class="icone icone-politica"></i> Política de Privacidade</a> </li>
           </ul>
           <br>
+          <!-- FIM MENU LINKS PADRAO -->
 
+          <!-- MENU INTERVALO -->
           <p class="titulo texto-com-icone"><i class="icone icone-intervalo"></i> <strong>Intervalo</strong></p>
           <ul class="nav nav-pills flex-column mb-auto">
             <li> <a href="#" class="nav-link active">Todo o Período</a> </li>
@@ -66,6 +42,7 @@
             <li> <a href="#" class="nav-link">Última Semana</a> </li>
             <li> <a href="#" class="nav-link">Personalizado</a> </li>
           </ul>
+          <!-- FIM MENU INTERVALO -->
         </div>
       </div>
 
@@ -105,16 +82,20 @@
               <p class="texto-com-icone"><i class="icone icone-racial"></i> <strong>Identificação Racial</strong></p>
               <table>
                 <tr>
-                  <td>Feminino</td>
-                  <td>45%</td>
+                  <td>Brancos</td>
+                  <td>55%</td>
                 </tr>
                 <tr>
-                  <td>Masculino</td>
-                  <td>50%</td>
+                  <td>Pretos ou pardos</td>
+                  <td>15%</td>
+                </tr>
+                <tr>
+                  <td>Indígenas</td>
+                  <td>10%</td>
                 </tr>
                 <tr>
                   <td>Outros</td>
-                  <td>5%</td>
+                  <td>10%</td>
                 </tr>
               </table>
             </div>
@@ -122,15 +103,15 @@
               <p class="texto-com-icone"><i class="icone icone-escolaridade"></i> <strong>Escolaridade</strong></p>
               <table>
                 <tr>
-                  <td>Feminino</td>
+                  <td>Básico</td>
                   <td>45%</td>
                 </tr>
                 <tr>
-                  <td>Masculino</td>
+                  <td>Superior</td>
                   <td>50%</td>
                 </tr>
                 <tr>
-                  <td>Outros</td>
+                  <td>Pós Graduação</td>
                   <td>5%</td>
                 </tr>
               </table>
@@ -139,16 +120,16 @@
               <p class="texto-com-icone"><i class="icone icone-faixa-etaria"></i> <strong>Faixa Etária</strong></p>
               <table>
                 <tr>
-                  <td>Feminino</td>
-                  <td>45%</td>
+                  <td>Menos de 20 anos</td>
+                  <td>55%</td>
                 </tr>
                 <tr>
-                  <td>Masculino</td>
-                  <td>50%</td>
+                  <td>Entre 21 e 30 anos</td>
+                  <td>15%</td>
                 </tr>
                 <tr>
-                  <td>Outros</td>
-                  <td>5%</td>
+                  <td>Mais de 30 anos</td>
+                  <td>30%</td>
                 </tr>
               </table>
             </div>
@@ -188,16 +169,20 @@
               <p class="texto-com-icone"><i class="icone icone-racial"></i> <strong>Identificação Racial</strong></p>
               <table>
                 <tr>
-                  <td>Feminino</td>
-                  <td>45%</td>
+                  <td>Brancos</td>
+                  <td>55%</td>
                 </tr>
                 <tr>
-                  <td>Masculino</td>
-                  <td>50%</td>
+                  <td>Pretos ou pardos</td>
+                  <td>15%</td>
+                </tr>
+                <tr>
+                  <td>Indígenas</td>
+                  <td>10%</td>
                 </tr>
                 <tr>
                   <td>Outros</td>
-                  <td>5%</td>
+                  <td>10%</td>
                 </tr>
               </table>
             </div>
@@ -205,15 +190,15 @@
               <p class="texto-com-icone"><i class="icone icone-escolaridade"></i> <strong>Escolaridade</strong></p>
               <table>
                 <tr>
-                  <td>Feminino</td>
+                  <td>Básico</td>
                   <td>45%</td>
                 </tr>
                 <tr>
-                  <td>Masculino</td>
+                  <td>Superior</td>
                   <td>50%</td>
                 </tr>
                 <tr>
-                  <td>Outros</td>
+                  <td>Pós Graduação</td>
                   <td>5%</td>
                 </tr>
               </table>
@@ -222,16 +207,16 @@
               <p class="texto-com-icone"><i class="icone icone-faixa-etaria"></i> <strong>Faixa Etária</strong></p>
               <table>
                 <tr>
-                  <td>Feminino</td>
+                  <td>Menos de 20 anos</td>
                   <td>45%</td>
                 </tr>
                 <tr>
-                  <td>Masculino</td>
-                  <td>50%</td>
+                  <td>Entre 21 e 30 anos</td>
+                  <td>20%</td>
                 </tr>
                 <tr>
-                  <td>Outros</td>
-                  <td>5%</td>
+                  <td>Mais de 30 anos</td>
+                  <td>35%</td>
                 </tr>
               </table>
             </div>
@@ -259,44 +244,4 @@
 </main>
 <!-- FIM CONTEUDO -->
 
-<!-- FOOTER -->
-<footer class="footer mt-auto py-3">
-  <div class="container">
-    <div class="row d-flex justify-content-between align-items-center">
-        <div class="col-3">
-            <ul>
-                <li><a href="#">Equipe</a></li>
-                <li><a href="#">Termos de Uso</a></li>
-                <li><a href="#">Declaração de Privacidade</a></li>
-                <li><a href="#">Ajuda | FAQ</a></li>
-            </ul>
-        </div>
-        <div class="col-3">
-            <ul>
-                <li><a target="_blank" href="https://www.instagram.com/seadufrgs">@seadufrgs</a></li>
-                <li><a target="_blank" href="https://www.instagram.com/napeadufrgs">@napeadufrgs</a></li>
-                <li><a href="mailto:lumina@sead.ufrgs.br">lumina@sead.ufrgs.br</a></li>
-            </ul>
-        </div>
-        <div id="footer-logos" class="col-6 d-flex justify-content-end align-items-center">
-            <a href="#">
-                <img src="assets/img/logos/logo_ufrgs.svg" alt="Logo UFRGS">
-            </a>
-            <a href="#">
-                <img src="assets/img/logos/logo_sead.svg" alt="Logo SEAD">
-            </a>
-            <a href="#">
-                <img src="assets/img/logos/logo_napead.svg" alt="Logo NAPEAD">
-            </a>
-            <a href="#">
-                <img src="assets/img/logos/logo_cnpq.svg" alt="Logo CNPQ">
-            </a>
-        </div>
-    </div>
-  </div>
-</footer>
-<script src="assets/bootstrap-5.2.3/js/bootstrap.bundle.min.js"></script>
-<script type="text/javascript" src="//fastly.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
-<script src="assets/js/script.js"></script>
-</body>
-</html>
+<?php include 'footer.php'; ?>
