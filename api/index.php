@@ -10,7 +10,7 @@
           <p class="text-center">É professor do Lúmina?</p>
 
           <!-- LOGIN -->
-          <form id="form-login-esquerdo" method="get" action="api/logado.php">
+          <form id="form-login-esquerdo" method="get" action="/api/logado.php">
             <input type="email" placeholder="E-mail" class="">
             <input type="password" placeholder="Senha" class="">
 
