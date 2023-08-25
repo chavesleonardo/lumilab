@@ -15,6 +15,14 @@ body{
 .nav-pills a, #esqueci-senha a{
     color: #1C1C1C;
 }
+.btn-outline-primary{
+    border-color: #57B6EC;
+    color: #57B6EC;
+}
+.btn-outline-primary:hover{
+    background-color: #57B6EC;
+    border-color: #57B6EC;
+}
 
 /* MENU ESQUERDO */
 #menu-esquerdo .nav-pills .nav-link.active,
@@ -78,7 +86,7 @@ body{
 }
 #conteudo-direito .com-borda{
     border: 1px solid #333;
-    padding: 2em;
+    padding: 1em;
     border-radius: 10px;
 }
 #conteudo-direito .row.contem-duas-colunas{
@@ -86,6 +94,13 @@ body{
 }
 #conteudo-direito .row.contem-duas-colunas .col-6 {
     width: 49%;
+}
+#conteudo-direito span.filtro-selecionado {
+    background: #E6E6E6;
+    padding: 2px 5px;
+    border-radius: 5px;
+    margin-left: 5px;
+    font-size: 12px;
 }
 
 /* ICONES */
@@ -148,6 +163,16 @@ body{
     width: 18px;
     height: 19px;
     background-image: url('../img/icons/timer.svg');
+}
+.icone.icone-redondo-azul{
+    width: 18px;
+    height: 19px;
+    background-image: url('../img/icons/ponto-azul.svg');
+}
+.icone.icone-redondo-verde{
+    width: 18px;
+    height: 19px;
+    background-image: url('../img/icons/ponto-verde.svg');
 }
 
 /* FOOTER */
