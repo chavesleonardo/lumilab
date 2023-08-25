@@ -175,9 +175,9 @@ footer a:hover{
 }
 
 #footer-logos{
-    gap: 20px;
+    gap: 50px;
 }
 
 #footer-logos img{
-    width: 120px;
+    width: 100px;
 }
