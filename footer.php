@@ -19,22 +19,22 @@
         </div>
         <div id="footer-logos" class="col-6 d-flex justify-content-end align-items-center">
             <a href="#">
-                <img src="/assets/img/logos/logo_ufrgs.svg" alt="Logo UFRGS">
+                <img src="assets/img/logos/logo_ufrgs.svg" alt="Logo UFRGS">
             </a>
             <a href="#">
-                <img src="/assets/img/logos/logo_sead.svg" alt="Logo SEAD">
+                <img src="assets/img/logos/logo_sead.svg" alt="Logo SEAD">
             </a>
             <a href="#">
-                <img src="/assets/img/logos/logo_napead.svg" alt="Logo NAPEAD">
+                <img src="assets/img/logos/logo_napead.svg" alt="Logo NAPEAD">
             </a>
             <a href="#">
-                <img src="/assets/img/logos/logo_cnpq.svg" alt="Logo CNPQ">
+                <img src="assets/img/logos/logo_cnpq.svg" alt="Logo CNPQ">
             </a>
         </div>
     </div>
   </div>
 </footer>
-<script src="/assets/bootstrap-5.2.3/js/bootstrap.bundle.min.js"></script>
+<script src="assets/bootstrap-5.2.3/js/bootstrap.bundle.min.js"></script>
 <script type="text/javascript" src="//fastly.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
 <script src="assets/js/script.js"></script>
 </body>
