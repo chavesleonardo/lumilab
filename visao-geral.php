@@ -26,9 +26,19 @@
           <br>
           <!-- FIM MENU LINKS PADRAO -->
 
+          <!-- MEUS CURSOS -->
+          <p class="titulo texto-com-icone mb-0"><i class="icone icone-intervalo"></i> <strong>Meus Cursos</strong></p>
+          <ul class="nav nav-pills flex-column mb-3">
+            <li> <a href="#" class="nav-link ">Saúde Mental na Escola</a> </li>
+            <li> <a href="#" class="nav-link">Conceitos de Epidemiologia</a> </li>
+            <li> <a href="#" class="nav-link active">Políticas de Equidade em Saúde</a> </li>
+            <li> <a href="#" class="nav-link">Notificações de Violência</a> </li>
+          </ul>
+          <!-- FIM MEUS CURSOS -->
+
           <!-- MENU INTERVALO -->
-          <p class="titulo texto-com-icone"><i class="icone icone-intervalo"></i> <strong>Intervalo</strong></p>
-          <ul class="nav nav-pills flex-column mb-auto">
+          <p class="titulo texto-com-icone mb-0"><i class="icone icone-intervalo"></i> <strong>Intervalo</strong></p>
+          <ul class="nav nav-pills flex-column">
             <li> <a href="#" class="nav-link ">Todo o Período</a> </li>
             <li> <a href="#" class="nav-link">Primeiro Mês</a> </li>
             <li> <a href="#" class="nav-link active">Última Semana</a> </li>
@@ -49,13 +59,13 @@
               <a href="#" class="btn btn-primary btn-sm w-100">Visão Geral</a>
             </div>
             <div class="col-3">
-              <a href="#" class="btn btn-outline-primary btn-sm w-100">Visão Geral</a>
+              <a href="questionarios.php" class="btn btn-outline-primary btn-sm w-100">Questionários</a>
             </div>
             <div class="col-3">
-              <a href="#" class="btn btn-outline-primary btn-sm w-100">Visão Geral</a>
+              <a href="foruns.php" class="btn btn-outline-primary btn-sm w-100">Interação nos Fóruns</a>
             </div>
             <div class="col-3">
-              <a href="#" class="btn btn-outline-primary btn-sm w-100">Visão Geral</a>
+              <a href="estatisticas.php" class="btn btn-outline-primary btn-sm w-100">Estatísticas</a>
             </div>
           </div>
         </div>
@@ -68,7 +78,7 @@
             <div class="col-12">
               <h5><strong>Saúde Mental na Escola:</strong></h5>
               <p class="texto-com-icone"><i class="icone icone-redondo-azul"></i> Dados de "Saúde Mental na Escola</p>
-              <p class="texto-com-icone"><i class="icone icone-redondo-verde"></i> Dados de Lúmina: <span class="filtro-selecionado">De 2019-05-05 a 2023-01-01</span></p>
+              <p class="texto-com-icone mb-0"><i class="icone icone-redondo-verde"></i> Dados de Lúmina: <span class="filtro-selecionado">De 2019-05-05 a 2023-01-01</span></p>
             </div>
           </div>
 
@@ -154,7 +164,7 @@
               </table>
             </div>
           </div>
-        </div><!-- FIM SEGUNDO QUADRO -->
+        </div><!-- FIM TERCEIRO QUADRO -->
 
         <!-- UMA LINHA COM 2 QUADROS -->
         <div class="row mt-3 mb-3 contem-duas-colunas">
@@ -170,6 +180,33 @@
               <div id="chart-2" style="width: 100%; height: 350px;"></div>
             </div>
         </div>
+
+        <!-- OUTRA LINHA COM 2 QUADROS -->
+        <div class="row mt-3 mb-3 contem-duas-colunas">
+          
+            <!-- TERCEIRO QUADRO -->
+            <div class="col-6 com-borda">
+              <h6><strong>Dias Ativos no Curso</strong></h6>
+              <div id="bar1" style="width: 100%; height: 350px;"></div>
+            </div>
+            <!-- QUARTO QUADRO -->
+            <div class="col-6 com-borda">
+              <h6><strong>Dias para obter o certificado</strong></h6>
+              <div id="bar2" style="width: 100%; height: 350px;"></div>
+            </div>
+        </div>
+
+        <!-- ULTIMO QUADRO BARRAS LATERAIS -->
+        <div class="row com-borda mt-3 mb-3" >
+          <!-- PRIMEIRA LINHA - SUMÁRIO -->
+          <div class="row">
+            <div class="col-12">
+            <h6><strong>Atividades Concluídas</strong></h6>
+              <div id="bar3" style="width: 100%; height: 350px;"></div>
+            </div>
+          </div>
+
+        </div><!-- FIM ULTIMO QUADRO -->   
 
       </div>
   </div>
