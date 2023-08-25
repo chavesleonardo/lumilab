@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" class="h-100">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/bootstrap-5.2.3/css/bootstrap.min.css" >
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,268 +13,295 @@
     <title>LumiLab</title>
 </head>
 
-<body>
-            
-    <header>
-        <div class="header container">
+<body class="d-flex flex-column h-100" cz-shortcut-listen="true">
+
+<!-- HEADER -->
+<div class="container">
+  <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+          <img src="assets/img/logos/logo.svg" alt="Logo LumiLab">
+        </a>
+        <ul class="nav">
+          <li class="nav-item"><a href="#" class="nav-link"><img src="assets/img/logos/logo_lumina.svg" alt="Logo LumiLab"></a></li>
+        </ul>
+  </header>
+</div>
+
+<!-- CONTEUDO -->
+<main class="flex-shrink-0">
+  <div class="container">
+    <div class="row">
+      <!-- MENU ESQUERDO -->
+      <div class="col-3">
+        <div id="menu-esquerdo" class="d-flex flex-column flex-shrink-0 p-3">
+          <p class="text-center">É professor do Lúmina?</p>
+
+          <!-- LOGIN -->
+          <form id="form-login-esquerdo">
+            <input type="email" placeholder="E-mail" class="">
+            <input type="password" placeholder="Senha" class="">
+
+            <div class="mb-2 mt-2 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Lembrar meus dados</label>
+            </div>
+            <button type="submit" class="btn btn-primary w-100 mb-1">Entrar</button>
+          </form>
+          <p id="esqueci-senha" class="w-100 text-center"><a href="#">Esqueci a senha</a></p>
+          <!-- LOGIN -->
+
+          <ul class="nav nav-pills flex-column mb-auto">
+            <li class="nav-item"> <a href="#" class="nav-link active2"><i class="icone icone-dados-plataforma"></i> Dados da Plataforma </a> </li>
+            <li> <a href="#" class="nav-link texto-com-icone"><i class="icone icone-ajuda"></i> Ajuda</a> </li>
+            <li> <a href="#" class="nav-link texto-com-icone"><i class="icone icone-equipe"></i> Equipe</a> </li>
+            <li> <a href="#" class="nav-link texto-com-icone"><i class="icone icone-termos"></i> Termos de Uso</a> </li>
+            <li> <a href="#" class="nav-link texto-com-icone"><i class="icone icone-politica"></i> Política de Privacidade</a> </li>
+          </ul>
+          <br>
+
+          <p class="titulo texto-com-icone"><i class="icone icone-intervalo"></i> <strong>Intervalo</strong></p>
+          <ul class="nav nav-pills flex-column mb-auto">
+            <li> <a href="#" class="nav-link active">Todo o Período</a> </li>
+            <li> <a href="#" class="nav-link">Primeiro Mês</a> </li>
+            <li> <a href="#" class="nav-link">Última Semana</a> </li>
+            <li> <a href="#" class="nav-link">Personalizado</a> </li>
+          </ul>
+          <hr>
+          <div>
+              <img src="https://sbcf.fr/wp-content/uploads/2018/03/sbcf-default-avatar.png" alt="" width="32" height="32" class="rounded-circle me-2">
+              <strong>Nome Sobrenome</strong>
+          </div>
+        </div>
+      </div>
+
+      <!-- CONTEUDO DIREITO -->
+      <div id="conteudo-direito" class="col-9">
+        
+        <!-- PRIMEIRO QUADRO -->
+        <div class="row com-borda">
+          <!-- PRIMEIRA LINHA - SUMÁRIO -->
+          <div class="row">
+            <div class="col-12">
+              <h3><strong>Novos Usuários:</strong> <span class="numero-indicador">58</span></h3>
+              <p>Esta Semana:</p>
+            </div>
+          </div>
+
+          <!-- SEGUNDA LINHA - TABELAS E TOTAIS -->
+          <div class="row">
+            <div class="col-3">
+              <p class="texto-com-icone"><i class="icone icone-genero"></i> <strong>Gênero</strong></p>
+              <table>
+                <tr>
+                  <td>Feminino</td>
+                  <td>45%</td>
+                </tr>
+                <tr>
+                  <td>Masculino</td>
+                  <td>50%</td>
+                </tr>
+                <tr>
+                  <td>Outros</td>
+                  <td>5%</td>
+                </tr>
+              </table>
+            </div>
+            <div class="col-3">
+              <p class="texto-com-icone"><i class="icone icone-racial"></i> <strong>Identificação Racial</strong></p>
+              <table>
+                <tr>
+                  <td>Feminino</td>
+                  <td>45%</td>
+                </tr>
+                <tr>
+                  <td>Masculino</td>
+                  <td>50%</td>
+                </tr>
+                <tr>
+                  <td>Outros</td>
+                  <td>5%</td>
+                </tr>
+              </table>
+            </div>
+            <div class="col-3">
+              <p class="texto-com-icone"><i class="icone icone-escolaridade"></i> <strong>Escolaridade</strong></p>
+              <table>
+                <tr>
+                  <td>Feminino</td>
+                  <td>45%</td>
+                </tr>
+                <tr>
+                  <td>Masculino</td>
+                  <td>50%</td>
+                </tr>
+                <tr>
+                  <td>Outros</td>
+                  <td>5%</td>
+                </tr>
+              </table>
+            </div>
+            <div class="col-3">
+              <p class="texto-com-icone"><i class="icone icone-faixa-etaria"></i> <strong>Faixa Etária</strong></p>
+              <table>
+                <tr>
+                  <td>Feminino</td>
+                  <td>45%</td>
+                </tr>
+                <tr>
+                  <td>Masculino</td>
+                  <td>50%</td>
+                </tr>
+                <tr>
+                  <td>Outros</td>
+                  <td>5%</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div><!-- FIM PRIMEIRO QUADRO -->
+
+        <!-- SEGUNDO QUADRO -->
+        <div class="row com-borda mt-3">
+          <!-- PRIMEIRA LINHA - SUMÁRIO -->
+          <div class="row">
+            <div class="col-12">
+              <h3><strong>Certificados Emitidos:</strong> <span class="numero-indicador">142</span></h3>
+              <p>Esta Semana:</p>
+            </div>
+          </div>
+
+          <!-- SEGUNDA LINHA - TABELAS E TOTAIS -->
+          <div class="row">
+            <div class="col-3">
+              <p class="texto-com-icone"><i class="icone icone-genero"></i> <strong>Gênero</strong></p>
+              <table>
+                <tr>
+                  <td>Feminino</td>
+                  <td>45%</td>
+                </tr>
+                <tr>
+                  <td>Masculino</td>
+                  <td>50%</td>
+                </tr>
+                <tr>
+                  <td>Outros</td>
+                  <td>5%</td>
+                </tr>
+              </table>
+            </div>
+            <div class="col-3">
+              <p class="texto-com-icone"><i class="icone icone-racial"></i> <strong>Identificação Racial</strong></p>
+              <table>
+                <tr>
+                  <td>Feminino</td>
+                  <td>45%</td>
+                </tr>
+                <tr>
+                  <td>Masculino</td>
+                  <td>50%</td>
+                </tr>
+                <tr>
+                  <td>Outros</td>
+                  <td>5%</td>
+                </tr>
+              </table>
+            </div>
+            <div class="col-3">
+              <p class="texto-com-icone"><i class="icone icone-escolaridade"></i> <strong>Escolaridade</strong></p>
+              <table>
+                <tr>
+                  <td>Feminino</td>
+                  <td>45%</td>
+                </tr>
+                <tr>
+                  <td>Masculino</td>
+                  <td>50%</td>
+                </tr>
+                <tr>
+                  <td>Outros</td>
+                  <td>5%</td>
+                </tr>
+              </table>
+            </div>
+            <div class="col-3">
+              <p class="texto-com-icone"><i class="icone icone-faixa-etaria"></i> <strong>Faixa Etária</strong></p>
+              <table>
+                <tr>
+                  <td>Feminino</td>
+                  <td>45%</td>
+                </tr>
+                <tr>
+                  <td>Masculino</td>
+                  <td>50%</td>
+                </tr>
+                <tr>
+                  <td>Outros</td>
+                  <td>5%</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div><!-- FIM SEGUNDO QUADRO -->
+
+        <!-- UMA LINHA COM 2 QUADROS -->
+        <div class="row mt-3 mb-3 contem-duas-colunas">
+          
+            <!-- TERCEIRO QUADRO -->
+            <div class="col-6 com-borda">
+              <h6><strong>Inscrições</strong></h6>
+              <div id="chart-1" style="width: 100%; height: 350px;"></div>
+            </div>
+            <!-- QUARTO QUADRO -->
+            <div class="col-6 com-borda">
+              <h6><strong>Certificados</strong></h6>
+              <div id="chart-2" style="width: 100%; height: 350px;"></div>
+            </div>
+        </div>
+
+      </div>
+  </div>
+  </div>
+</main>
+<!-- FIM CONTEUDO -->
+
+<!-- FOOTER -->
+<footer class="footer mt-auto py-3">
+  <div class="container">
+    <div class="row d-flex justify-content-between align-items-center">
+        <div class="col-3">
+            <ul>
+                <li><a href="#">Equipe</a></li>
+                <li><a href="#">Termos de Uso</a></li>
+                <li><a href="#">Declaração de Privacidade</a></li>
+                <li><a href="#">Ajuda | FAQ</a></li>
+            </ul>
+        </div>
+        <div class="col-3">
+            <ul>
+                <li><a target="_blank" href="https://www.instagram.com/seadufrgs">@seadufrgs</a></li>
+                <li><a target="_blank" href="https://www.instagram.com/napeadufrgs">@napeadufrgs</a></li>
+                <li><a href="mailto:lumina@sead.ufrgs.br">lumina@sead.ufrgs.br</a></li>
+            </ul>
+        </div>
+        <div id="footer-logos" class="col-6 d-flex justify-content-end align-items-center">
             <a href="#">
-                <img src="assets/img/logos/logo.svg" alt="Logo LumiLab">
+                <img src="assets/img/logos/logo_ufrgs.svg" alt="Logo UFRGS">
             </a>
             <a href="#">
-                <img src="assets/img/logos/logo_lumina.svg" alt="Logo LumiLab">
+                <img src="assets/img/logos/logo_sead.svg" alt="Logo SEAD">
+            </a>
+            <a href="#">
+                <img src="assets/img/logos/logo_napead.svg" alt="Logo NAPEAD">
+            </a>
+            <a href="#">
+                <img src="assets/img/logos/logo_cnpq.svg" alt="Logo CNPQ">
             </a>
         </div>
-    </header>
-
-    <main class="container">
-        
-        <!-- MENU ESQUERDO -->
-        <nav style="width: 20%;">
-            <div>
-                <button class="botao laranja">Entrar</button>
-            </div>
-            <hr class="menu-divisor">
-            <div>
-                <ul>
-                    <a href=""><li class="ativo"><img src="assets/img/icons/data.svg" alt="data-icon">Dados da Plataforma</li></a>
-                    <a href="#"><li><img src="assets/img/icons/help.svg" alt="help-icon">Ajuda</li></a>
-                    <a href="#"><li><img src="assets/img/icons/team.svg" alt="team-icon">Equipe</li></a>
-                    <a href="#"><li><img src="assets/img/icons/file.svg" alt="file-icon">Termos de Uso</li></a>
-                    <a href="#"><li><img src="assets/img/icons/lock.svg" alt="lock-icon">Política de Privacidade</li></a>
-                </ul>
-            </div>
-            <hr class="menu-divisor">
-            <div>
-                <h4><img src="assets/img/icons/graduation.svg" alt="timer-icon">Meus Cursos</h4>
-                <ul>
-                    <a href="#"><li>Nome de um Curso</li></a>
-                    <a href="#"><li>Nome de outro Curso</li></a>
-                    <a href="#"><li class="ativo2">O Curso Visto Agora</li></a>
-                    <a href="#"><li>Por fim mais um Curso</li></a>
-                </ul>
-            </div>
-            <hr class="menu-divisor">
-            <div>
-                <h4><img src="assets/img/icons/timer.svg" alt="timer-icon">Intervalo</h4>
-                <ul>
-                    <a href="#"><li>Todo o período</li></a>
-                    <a href="#"><li>Primeiro mês</li></a>
-                    <a href="#"><li>Última Semana</li></a>
-                    <a href="#" id="intervalo-personalizado"><li class="ativo2">Personalizado</li></a>
-                    <li id="slide-out" class="datas-visivel">
-                        <div class="datas-periodo">
-                            <label for="periodo_inicial">Período Inicial:</label>   
-                            <input type="date" name="periodo_inicial" value=""/>
-                            <label for="periodo_inicial">Período Final:</label>   
-                            <input type="date" name="periodo_inicial" value=""/>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <hr class="menu-divisor">
-            <h4><img src="assets/img/icons/filter.svg" alt="timer-icon">Filtros dos Cursos</h4>
-            <div>
-                <h5 class="accordion-filtros-nav">&nbsp;<img src="assets/img/icons/users.svg" alt="timer-icon">&nbsp;Inscritos</h5>
-                <ul class="lista-com-toggle">
-                    <li>
-                        <p>Até 500 Alunos</p>
-                        <label class="toggle">
-                            <input class="toggle-checkbox" type="checkbox">
-                            <div class="toggle-switch"></div>
-                        </label>
-                    </li>
-                    <li>
-                        <p>Entre 500 e 2,5 mil</p>
-                        <label class="toggle">
-                            <input class="toggle-checkbox" type="checkbox">
-                            <div class="toggle-switch"></div>
-                        </label>
-                    </li>
-                    <li>
-                        <p>Entre 2,5 mil e 5 mil</p>
-                        <label class="toggle">
-                            <input class="toggle-checkbox" type="checkbox" checked="">
-                            <div class="toggle-switch"></div>
-                        </label>
-                    </li>
-                    <li>
-                        <p>Mais de 5 mil</p>
-                        <label class="toggle">
-                            <input class="toggle-checkbox" type="checkbox">
-                            <div class="toggle-switch"></div>
-                        </label>
-                    </li>
-                </ul>
-            </div>
-            <div>
-                <h5 class="accordion-filtros-nav">&nbsp;<img src="assets/img/icons/medal.svg" alt="timer-icon">&nbsp;Concluintes</h5>
-                <ul class="lista-com-toggle">
-                    <li>
-                        <p>Menos de 25%</p>
-                        <label class="toggle">
-                            <input class="toggle-checkbox" type="checkbox">
-                            <div class="toggle-switch"></div>
-                        </label>
-                    </li>
-                    <li>
-                        <p>Entre 25% e 50%</p>
-                        <label class="toggle">
-                            <input class="toggle-checkbox" type="checkbox">
-                            <div class="toggle-switch"></div>
-                        </label>
-                    </li>
-                    <li>
-                        <p>Mais de 75%</p>
-                        <label class="toggle">
-                            <input class="toggle-checkbox" type="checkbox" checked="">
-                            <div class="toggle-switch"></div>
-                        </label>
-                    </li>
-                </ul>
-            </div>
-            <div>
-                <h5 class="accordion-filtros-nav">&nbsp;<img src="assets/img/icons/timer2.svg" alt="timer-icon">&nbsp;Carga Horária</h5>
-                <ul class="lista-com-toggle">
-                    <li>
-                        <p>Até 20h</p>
-                        <label class="toggle">
-                            <input class="toggle-checkbox" type="checkbox" checked="">
-                            <div class="toggle-switch"></div>
-                        </label>
-                    </li>
-                    <li>
-                        <p>de 20h a 40h</p>
-                        <label class="toggle">
-                            <input class="toggle-checkbox" type="checkbox">
-                            <div class="toggle-switch"></div>
-                        </label>
-                    </li>
-                    <li>
-                        <p>Mais de 40h</p>
-                        <label class="toggle">
-                            <input class="toggle-checkbox" type="checkbox">
-                            <div class="toggle-switch"></div>
-                        </label>
-                    </li>
-                </ul>
-            </div>
-            <div>
-                <h5 class="accordion-filtros-nav">&nbsp;<img src="assets/img/icons/users.svg" alt="timer-icon">&nbsp;Área</h5>
-                <ul class="lista-com-toggle">
-                    <li>
-                        <p>Tecnológicas</p>
-                        <label class="toggle">
-                            <input class="toggle-checkbox" type="checkbox">
-                            <div class="toggle-switch"></div>
-                        </label>
-                    </li>
-                    <li>
-                        <p>Humanas e Sociais</p>
-                        <label class="toggle">
-                            <input class="toggle-checkbox" type="checkbox" checked="">
-                            <div class="toggle-switch"></div>
-                        </label>
-                    </li>
-                    <li>
-                        <p>Artes</p>
-                        <label class="toggle">
-                            <input class="toggle-checkbox" type="checkbox">
-                            <div class="toggle-switch"></div>
-                        </label>
-                    </li>
-                    <li>
-                        <p>Saúde</p>
-                        <label class="toggle">
-                            <input class="toggle-checkbox" type="checkbox">
-                            <div class="toggle-switch"></div>
-                        </label>
-                    </li>
-                </ul>
-            </div>
-            <hr class="menu-divisor">
-        </nav>
-        <!-- FIM MENU ESQUERDO -->
-        <!-- CONTEÚDO PRINCIPAL -->
-        <div class="conteudo">
-            <h1>Dados da Plataforma</h1>
-            <h2 class="titulo-conteudo">Visão Geral</h2>
-            <div class="caixa-conteudo">
-                <div>
-                    <a class="botao-laranja-topo blt-ativo">Inscrições em cursos</a>
-                    <a class="botao-laranja-topo blt-ml-35px zindex2">Novos Usuários</a>
-                    <a class="botao-laranja-topo blt-ml-35px">Certificados emitidos</a>
-                </div>
-                <div id="chart-1" style="width: 100%; height: 350px;"></div>
-        </div>
-        </div>
-        <!-- FIM CONTEÚDO PRINCIPAL -->
-    </main>
-
-    <footer>
-        <div class="container">
-            <div class="links-footer">
-                <ul>
-                    <li><a href="#">Equipe</a></li>
-                    <li><a href="#">Termos de Uso</a></li>
-                    <li><a href="#">Declaração de Privacidade</a></li>
-                    <li><a href="#">Ajuda | FAQ</a></li>
-                </ul>
-                <ul>
-                    <li><a href="#">@seadufrgs</a></li>
-                    <li><a href="#">@napeadufrgs</a></li>
-                    <li><a href="#">lumina@sead.ufrgs.br</a></li>
-                </ul>
-            </div>
-            <div class="logos-footer">
-                <a href="#">
-                    <img src="assets/img/logos/logo_ufrgs.svg" alt="Logo UFRGS">
-                </a>
-                <a href="#">
-                    <img src="assets/img/logos/logo_sead.svg" alt="Logo SEAD">
-                </a>
-                <a href="#">
-                    <img src="assets/img/logos/logo_napead.svg" alt="Logo NAPEAD">
-                </a>
-                <a href="#">
-                    <img src="assets/img/logos/logo_cnpq.svg" alt="Logo CNPQ">
-                </a>
-            </div>
-        </div>
-    </footer>
-    <script src="assets/js/script.js"></script>
-    <script type="text/javascript" src="//fastly.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
-    
-    <script type="text/javascript">
-        var dom = document.getElementById('chart-1');
-        var myChart = echarts.init(dom, null, {
-          renderer: 'canvas',
-          useDirtyRect: false
-        });
-        var app = {};
-        
-        var option;
-    
-        option = {
-            xAxis: {
-                type: 'category',
-                data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
-            },
-            yAxis: {
-                type: 'value'
-            },
-            series: [
-                {
-                data: [150, 230, 224, 218, 135, 147, 260],
-                type: 'line'
-                }
-            ]
-        };
-    
-        if (option && typeof option === 'object') {
-          myChart.setOption(option);
-        }
-    
-        window.addEventListener('resize', myChart.resize);
-      </script>
+    </div>
+  </div>
+</footer>
+<script src="assets/bootstrap-5.2.3/js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript" src="//fastly.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
+<script src="assets/js/script.js"></script>
 </body>
 </html>

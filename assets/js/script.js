@@ -1,24 +1,74 @@
-function toggleSideNav () {
-    var sideNav = document.getElementById("slide-out");
-    sideNav.classList.toggle("datas-ocultas");
-    sideNav.classList.toggle("datas-visivel");
+
+
+
+
+
+/**********************************************
+* G R A F I C O S    D E     T E S T E
+***********************************************/
+
+var dom = document.getElementById('chart-1');
+var myChart = echarts.init(dom, null, {
+  renderer: 'canvas',
+  useDirtyRect: false
+});
+var app = {};
+
+var option;
+
+option = {
+    xAxis: {
+      type: 'category',
+      boundaryGap: false,
+      data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
+    },
+    yAxis: {
+      type: 'value'
+    },
+    series: [
+      {
+        data: [820, 932, 901, 934, 1290, 1330, 1320],
+        type: 'line',
+        areaStyle: {}
+      }
+    ]
+  };
+
+if (option && typeof option === 'object') {
+  myChart.setOption(option);
 }
 
-document.getElementById("intervalo-personalizado").addEventListener("click", toggleSideNav);
+window.addEventListener('resize', myChart.resize);
 
-/* acordion filtros nav */
-var acc = document.getElementsByClassName("accordion-filtros-nav");
+var dom = document.getElementById('chart-2');
+var myChart = echarts.init(dom, null, {
+  renderer: 'canvas',
+  useDirtyRect: false
+});
+var app = {};
 
-var i;
+var option;
 
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    this.classList.toggle("afn-ativo");
-    var panel = this.nextElementSibling;
-    if (panel.style.maxHeight) {
-      panel.style.maxHeight = null;
-    } else {
-      panel.style.maxHeight = panel.scrollHeight + "px";
-    } 
-  });
+option = {
+    xAxis: {
+      type: 'category',
+      boundaryGap: false,
+      data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
+    },
+    yAxis: {
+      type: 'value'
+    },
+    series: [
+      {
+        data: [820, 932, 901, 934, 1290, 1330, 1320],
+        type: 'line',
+        areaStyle: {}
+      }
+    ]
+  };
+
+if (option && typeof option === 'object') {
+  myChart.setOption(option);
 }
+
+window.addEventListener('resize', myChart.resize);
