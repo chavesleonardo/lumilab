@@ -65,10 +65,10 @@
               <a href="visao-geral.php" class="btn btn-outline-primary btn-sm w-100">Visão Geral</a>
             </div>
             <div class="col-3">
-              <a href="#" class="btn btn-primary btn-sm w-100">Questionários</a>
+              <a href="questionarios.php" class="btn btn-outline-primary btn-sm w-100">Questionários</a>
             </div>
             <div class="col-3">
-              <a href="foruns.php" class="btn btn-outline-primary btn-sm w-100">Interação nos Fóruns</a>
+              <a href="#" class="btn btn-primary btn-sm w-100">Interação nos Fóruns</a>
             </div>
             <div class="col-3">
               <a href="estatisticas.php" class="btn btn-outline-primary btn-sm w-100">Estatísticas</a>
@@ -81,7 +81,8 @@
                     <div class="row">
             <div class="col-12">
               <h5><strong>Saúde Mental na Escola:</strong></h5>
-              <p class="texto-com-icone mb-0"><i class="icone icone-redondo-azul"></i> Dados de "Saúde Mental na Escola</p>
+              <p class="texto-com-icone mb-3"><i class="icone icone-redondo-azul"></i> Dados de "Saúde Mental na Escola</p>
+              <p class="texto-com-icone mb-0"><i class="icone icone-redondo-verde"></i> Dados de Lúmina: <span class="filtro-selecionado">De 2019-05-05 a 2023-01-01</span></p>
             </div>
           </div>
         </div>
@@ -92,30 +93,18 @@
           <!-- PRIMEIRA LINHA - SUMÁRIO -->
           <div class="row">
             <div class="col-12">
-              <h5 class="texto-com-icone"><i class="icone icone-livro"></i> <strong>Questionários:</strong></h5>
+              <h5 class="texto-com-icone"><i class="icone icone-livro"></i> <strong>Fóruns:</strong></h5>
             </div>
             <div class="col-12">
               <table id="table-questionarios" class="table table-sm">
-              <tr>
-                    <td><p class="texto-com-icone"><i class="icone icone-olho"></i> Questionário 1 - Lorem Ipsum</p></td>
-                    <td><p class="texto-com-icone"><i class="icone icone-olho-riscado"></i> Questionário 2 - Lorem Ipsum</p></td>
-                  </tr>
-                  <tr>
-                    <td><p class="texto-com-icone"><i class="icone icone-olho-riscado"></i> Questionário 3 - Lorem Ipsum</p></td>
-                    <td><p class="texto-com-icone"><i class="icone icone-olho-riscado"></i> Questionário 4 - Lorem Ipsum</p></td>
-                  </tr>
-                  <tr>
-                    <td><p class="texto-com-icone"><i class="icone icone-olho-riscado"></i> Questionário 5 - Lorem Ipsum</p></td>
-                    <td><p class="texto-com-icone"><i class="icone icone-olho"></i> Questionário 6 - Lorem Ipsum</p></td>
-                  </tr>
-                  <tr>
-                    <td><p class="texto-com-icone"><i class="icone icone-olho-riscado"></i> Questionário 7 - Lorem Ipsum</p></td>
-                    <td><p class="texto-com-icone"><i class="icone icone-olho-riscado"></i> Questionário 8 - Lorem Ipsum</p></td>
-                  </tr>
-                  <tr>
-                    <td><p class="texto-com-icone"><i class="icone icone-olho-riscado"></i> Questionário 9 - Lorem Ipsum</p></td>
-                    <td><p class="texto-com-icone"><i class="icone icone-olho-riscado"></i> Questionário 10 - Lorem Ipsum</p></td>
-                  </tr>
+                <tr>
+                    <td><p class="texto-com-icone"><i class="icone icone-olho"></i> Fórum 1 - Lorem Ipsum</p></td>
+                    <td><p class="texto-com-icone"><i class="icone icone-olho-riscado"></i> Fórum 2 - Lorem Ipsum</p></td>
+                </tr>
+                <tr>
+                   <td><p class="texto-com-icone"><i class="icone icone-olho-riscado"></i> Fórum 3 - Lorem Ipsum</p></td>
+                   <td></td>
+                </tr>
               </table>
             </div>
           </div>
@@ -126,107 +115,50 @@
           </div>
         </div><!-- FIM TERCEIRO QUADRO -->
 
-        <!-- QUADRO GRAFICO QUESTIONARIO 1 -->
-        <div class="row com-borda mt-3 mb-3" >
-          <!-- PRIMEIRA LINHA - SUMÁRIO -->
-          <div class="row">
-            <div class="col-12">
-              <h6><strong>Questionário 1 - Lorem Ipsum</strong></h6>
-            </div>
-            <div class="col-4">
-              <table class="table table-sm table-borderless">
-                <tr>
-                  <td>Questões</td>
-                  <td>Dificulty</td>
-                  <td>P(x=1|Z=0)</td>
-                  <td>Discrimination</td>
-                </tr>
-                <tr>
-                  <td>Q1</td>
-                  <td>-0,35</td>
-                  <td>0,76</td>
-                  <td>-0,05</td>
-                </tr>
-                <tr>
-                  <td>Q2</td>
-                  <td>-0,17</td>
-                  <td>0,46</td>
-                  <td>-1,16</td>
-                </tr>
-                <tr>
-                  <td>Q3</td>
-                  <td>-0,17</td>
-                  <td>0,46</td>
-                  <td>-1,16</td>
-                </tr>
-                <tr>
-                  <td>Q4</td>
-                  <td>-0,17</td>
-                  <td>0,46</td>
-                  <td>-1,16</td>
-                </tr>
-                <tr>
-                  <td>Q5</td>
-                  <td>-0,17</td>
-                  <td>0,46</td>
-                  <td>-1,16</td>
-                </tr>
-              </table>
-            </div>
-            <div class="col-8"></div>
-          </div>
-        </div><!-- FIM GRAFICO QUESTIONARIO 1 -->
-
-        <!-- QUADRO GRAFICO QUESTIONARIO 2 -->
+        <!-- QUADRO FÓRUM -->
         <div class="row com-borda mt-3 mb-3" >
           <!-- PRIMEIRA LINHA - SUMÁRIO -->
           <div class="row">
             <div class="col-12">
               <h6><strong>Questionário 6 - Lorem Ipsum</strong></h6>
             </div>
+            <div class="col-8"></div>
             <div class="col-4">
               <table class="table table-sm table-borderless">
                   <tr>
-                    <td>Questões</td>
-                    <td>Dificulty</td>
-                    <td>P(x=1|Z=0)</td>
-                    <td>Discrimination</td>
+                    <td>Fórum</td>
+                    <td>Qtd Posts (n)</td>
+                    <td>Média</td>
+                    <td>Dev Pad</td>
                   </tr>
                   <tr>
-                  <td>Q1</td>
-                  <td>-0,35</td>
-                  <td>0,76</td>
-                  <td>-0,05</td>
+                  <td>Lúmina</td>
+                  <td>18 (média)</td>
+                  <td>2,5</td>
+                  <td>0,5</td>
                 </tr>
                 <tr>
-                  <td>Q2</td>
+                  <td>F1</td>
                   <td>-0,17</td>
                   <td>0,46</td>
                   <td>-1,16</td>
                 </tr>
                 <tr>
-                  <td>Q3</td>
+                  <td>F2</td>
                   <td>-0,17</td>
                   <td>0,46</td>
                   <td>-1,16</td>
                 </tr>
                 <tr>
-                  <td>Q4</td>
-                  <td>-0,17</td>
-                  <td>0,46</td>
-                  <td>-1,16</td>
-                </tr>
-                <tr>
-                  <td>Q5</td>
+                  <td>F3</td>
                   <td>-0,17</td>
                   <td>0,46</td>
                   <td>-1,16</td>
                 </tr>
                 </table>
             </div>
-            <div class="col-8"></div>
           </div>
-        </div><!-- FIM GRAFICO QUESTIONARIO 2 -->   
+        </div><!-- FIM FÓRUM -->   
 
       </div>
   </div>

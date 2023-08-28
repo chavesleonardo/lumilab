@@ -4,7 +4,7 @@
     <div class="row d-flex justify-content-between align-items-center">
         <div class="col-3">
             <ul>
-                <li><a href="#">Equipe</a></li>
+                <li><a href="equipe.php">Equipe</a></li>
                 <li><a href="#">Termos de Uso</a></li>
                 <li><a href="#">Declaração de Privacidade</a></li>
                 <li><a href="#">Ajuda | FAQ</a></li>
