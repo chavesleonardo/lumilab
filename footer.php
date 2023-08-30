@@ -5,9 +5,9 @@
         <div class="col-3">
             <ul>
                 <li><a href="equipe.php">Equipe</a></li>
-                <li><a href="#">Termos de Uso</a></li>
+                <li><a href="termos.php">Termos de Uso</a></li>
                 <li><a href="#">Declaração de Privacidade</a></li>
-                <li><a href="#">Ajuda | FAQ</a></li>
+                <li><a href="ajuda.php">Ajuda | FAQ</a></li>
             </ul>
         </div>
         <div class="col-3">

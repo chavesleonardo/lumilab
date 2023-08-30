@@ -25,9 +25,9 @@
           <!-- MENU LINKS PADRAO -->
           <ul class="nav nav-pills flex-column mb-auto">
             <li class="nav-item"> <a href="#" class="nav-link active2"><i class="icone icone-dados-plataforma"></i> Dados da Plataforma </a> </li>
-            <li> <a href="#" class="nav-link texto-com-icone"><i class="icone icone-ajuda"></i> Ajuda</a> </li>
+            <li> <a href="ajuda.php" class="nav-link texto-com-icone"><i class="icone icone-ajuda"></i> Ajuda</a> </li>
             <li> <a href="equipe.php" class="nav-link texto-com-icone"><i class="icone icone-equipe"></i> Equipe</a> </li>
-            <li> <a href="#" class="nav-link texto-com-icone"><i class="icone icone-termos"></i> Termos de Uso</a> </li>
+            <li> <a href="termos.php" class="nav-link texto-com-icone"><i class="icone icone-termos"></i> Termos de Uso</a> </li>
             <li> <a href="#" class="nav-link texto-com-icone"><i class="icone icone-politica"></i> Política de Privacidade</a> </li>
           </ul>
           <br>
@@ -97,24 +97,24 @@
             <div class="col-12">
               <table id="table-questionarios" class="table table-sm">
               <tr>
-                    <td><p class="texto-com-icone"><i class="icone icone-olho"></i> Questionário 1 - Lorem Ipsum</p></td>
-                    <td><p class="texto-com-icone"><i class="icone icone-olho-riscado"></i> Questionário 2 - Lorem Ipsum</p></td>
+                    <td class="cursor-pointer"><p class="texto-com-icone"><i class="icone icone-olho"></i> Questionário 1 - Lorem Ipsum</p></td>
+                    <td class="desativado cursor-pointer"><p class="texto-com-icone"><i class="icone icone-olho-riscado"></i> Questionário 2 - Lorem Ipsum</p></td>
                   </tr>
                   <tr>
-                    <td><p class="texto-com-icone"><i class="icone icone-olho-riscado"></i> Questionário 3 - Lorem Ipsum</p></td>
-                    <td><p class="texto-com-icone"><i class="icone icone-olho-riscado"></i> Questionário 4 - Lorem Ipsum</p></td>
+                    <td class="desativado cursor-pointer"><p class="texto-com-icone"><i class="icone icone-olho-riscado"></i> Questionário 3 - Lorem Ipsum</p></td>
+                    <td class="desativado cursor-pointer"><p class="texto-com-icone"><i class="icone icone-olho-riscado"></i> Questionário 4 - Lorem Ipsum</p></td>
                   </tr>
                   <tr>
-                    <td><p class="texto-com-icone"><i class="icone icone-olho-riscado"></i> Questionário 5 - Lorem Ipsum</p></td>
-                    <td><p class="texto-com-icone"><i class="icone icone-olho"></i> Questionário 6 - Lorem Ipsum</p></td>
+                    <td class="desativado cursor-pointer"><p class="texto-com-icone"><i class="icone icone-olho-riscado"></i> Questionário 5 - Lorem Ipsum</p></td>
+                    <td class="cursor-pointer"><p class="texto-com-icone"><i class="icone icone-olho"></i> Questionário 6 - Lorem Ipsum</p></td>
                   </tr>
                   <tr>
-                    <td><p class="texto-com-icone"><i class="icone icone-olho-riscado"></i> Questionário 7 - Lorem Ipsum</p></td>
-                    <td><p class="texto-com-icone"><i class="icone icone-olho-riscado"></i> Questionário 8 - Lorem Ipsum</p></td>
+                    <td class="desativado cursor-pointer"><p class="texto-com-icone"><i class="icone icone-olho-riscado"></i> Questionário 7 - Lorem Ipsum</p></td>
+                    <td class="desativado cursor-pointer"><p class="texto-com-icone"><i class="icone icone-olho-riscado"></i> Questionário 8 - Lorem Ipsum</p></td>
                   </tr>
                   <tr>
-                    <td><p class="texto-com-icone"><i class="icone icone-olho-riscado"></i> Questionário 9 - Lorem Ipsum</p></td>
-                    <td><p class="texto-com-icone"><i class="icone icone-olho-riscado"></i> Questionário 10 - Lorem Ipsum</p></td>
+                    <td class="desativado cursor-pointer"><p class="texto-com-icone"><i class="icone icone-olho-riscado"></i> Questionário 9 - Lorem Ipsum</p></td>
+                    <td class="desativado cursor-pointer"><p class="texto-com-icone"><i class="icone icone-olho-riscado"></i> Questionário 10 - Lorem Ipsum</p></td>
                   </tr>
               </table>
             </div>

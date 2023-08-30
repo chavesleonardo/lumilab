@@ -28,6 +28,15 @@ body{
     background-color: #57B6EC;
     border-color: #57B6EC;
 }
+.accordion-button:not(.collapsed){
+    color: #57B6EC;
+}
+.cursor-pointer{
+    cursor: pointer;
+}
+.cursor-pointer:hover{
+    font-weight: bold;
+}
 
 /* MENU ESQUERDO */
 #menu-esquerdo .nav-pills .nav-link.active,
@@ -102,16 +111,27 @@ body{
 }
 #conteudo-direito span.filtro-selecionado {
     background: #E6E6E6;
-    padding: 2px 5px;
+    padding: 4px 7px;
     border-radius: 5px;
     margin-left: 5px;
     font-size: 12px;
 }
+#conteudo-direito span.filtro-selecionado::after{
+    display: inline-block;
+    content: "\00d7";
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 5px;
+}
+
 #table-questionarios{
     font-size: 16px;
 }
 #table-questionarios tr{
     border-color: transparent;
+}
+#table-questionarios .desativado{
+    color: #999;
 }
 .border-none{
     border: none;
@@ -119,6 +139,19 @@ body{
 .card-equipe img{
     border-radius: 20px;
     width: 60%;
+}
+#accordionAjuda{
+    margin: 0 -1em;
+}
+#accordionAjuda .accordion-item {
+    margin-bottom: 15px;
+    border: 1px solid #3e3e3e;
+    border-radius: 10px;
+    outline: none;
+}
+#accordionAjuda .accordion-button{
+    background: none;
+    outline: none;
 }
 
 /* ICONES */

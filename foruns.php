@@ -25,9 +25,9 @@
           <!-- MENU LINKS PADRAO -->
           <ul class="nav nav-pills flex-column mb-auto">
             <li class="nav-item"> <a href="#" class="nav-link active2"><i class="icone icone-dados-plataforma"></i> Dados da Plataforma </a> </li>
-            <li> <a href="#" class="nav-link texto-com-icone"><i class="icone icone-ajuda"></i> Ajuda</a> </li>
+            <li> <a href="ajuda.php" class="nav-link texto-com-icone"><i class="icone icone-ajuda"></i> Ajuda</a> </li>
             <li> <a href="equipe.php" class="nav-link texto-com-icone"><i class="icone icone-equipe"></i> Equipe</a> </li>
-            <li> <a href="#" class="nav-link texto-com-icone"><i class="icone icone-termos"></i> Termos de Uso</a> </li>
+            <li> <a href="termos.php" class="nav-link texto-com-icone"><i class="icone icone-termos"></i> Termos de Uso</a> </li>
             <li> <a href="#" class="nav-link texto-com-icone"><i class="icone icone-politica"></i> Política de Privacidade</a> </li>
           </ul>
           <br>
@@ -82,7 +82,7 @@
             <div class="col-12">
               <h5><strong>Saúde Mental na Escola:</strong></h5>
               <p class="texto-com-icone mb-3"><i class="icone icone-redondo-azul"></i> Dados de "Saúde Mental na Escola</p>
-              <p class="texto-com-icone mb-0"><i class="icone icone-redondo-verde"></i> Dados de Lúmina: <span class="filtro-selecionado">De 2019-05-05 a 2023-01-01</span></p>
+              <p class="texto-com-icone mb-0"><i class="icone icone-redondo-verde"></i> Dados de Lúmina: <span class="filtro-selecionado">De 2019-05-05 a 2023-01-01</span> <span class="filtro-selecionado">Esta Semana</span></p>
             </div>
           </div>
         </div>
@@ -98,11 +98,11 @@
             <div class="col-12">
               <table id="table-questionarios" class="table table-sm">
                 <tr>
-                    <td><p class="texto-com-icone"><i class="icone icone-olho"></i> Fórum 1 - Lorem Ipsum</p></td>
-                    <td><p class="texto-com-icone"><i class="icone icone-olho-riscado"></i> Fórum 2 - Lorem Ipsum</p></td>
+                    <td class="cursor-pointer"><p class="texto-com-icone"><i class="icone icone-olho"></i> Fórum 1 - Lorem Ipsum</p></td>
+                    <td class="desativado cursor-pointer"><p class="texto-com-icone"><i class="icone icone-olho-riscado"></i> Fórum 2 - Lorem Ipsum</p></td>
                 </tr>
                 <tr>
-                   <td><p class="texto-com-icone"><i class="icone icone-olho-riscado"></i> Fórum 3 - Lorem Ipsum</p></td>
+                   <td class="desativado cursor-pointer"><p class="texto-com-icone"><i class="icone icone-olho-riscado"></i> Fórum 3 - Lorem Ipsum</p></td>
                    <td></td>
                 </tr>
               </table>

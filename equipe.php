@@ -25,9 +25,9 @@
           <!-- MENU LINKS PADRAO -->
           <ul class="nav nav-pills flex-column mb-auto">
             <li class="nav-item"> <a href="visao-geral.php" class="nav-link "><i class="icone icone-dados-plataforma"></i> Dados da Plataforma </a> </li>
-            <li> <a href="#" class="nav-link texto-com-icone"><i class="icone icone-ajuda"></i> Ajuda</a> </li>
+            <li> <a href="ajuda.php" class="nav-link texto-com-icone"><i class="icone icone-ajuda"></i> Ajuda</a> </li>
             <li> <a href="#" class="nav-link texto-com-icone active2"><i class="icone icone-equipe"></i> Equipe</a> </li>
-            <li> <a href="#" class="nav-link texto-com-icone"><i class="icone icone-termos"></i> Termos de Uso</a> </li>
+            <li> <a href="termos.php" class="nav-link texto-com-icone"><i class="icone icone-termos"></i> Termos de Uso</a> </li>
             <li> <a href="#" class="nav-link texto-com-icone"><i class="icone icone-politica"></i> Política de Privacidade</a> </li>
           </ul>
           <br>
@@ -42,16 +42,6 @@
             <li> <a href="#" class="nav-link">Notificações de Violência</a> </li>
           </ul>
           <!-- FIM MEUS CURSOS -->
-
-          <!-- MENU INTERVALO -->
-          <p class="titulo texto-com-icone mb-0"><i class="icone icone-intervalo"></i> <strong>Intervalo</strong></p>
-          <ul class="nav nav-pills flex-column">
-            <li> <a href="#" class="nav-link ">Todo o Período</a> </li>
-            <li> <a href="#" class="nav-link">Primeiro Mês</a> </li>
-            <li> <a href="#" class="nav-link active">Última Semana</a> </li>
-            <li> <a href="#" class="nav-link">Personalizado</a> </li>
-          </ul>
-          <!-- FIM MENU INTERVALO -->
         </div>
       </div>
 
